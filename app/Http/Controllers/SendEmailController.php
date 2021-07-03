@@ -25,18 +25,13 @@ class SendEmailController extends Controller
             'friend_email' =>'required|email',
         ]);
        SendEmail::create($request->all());
-    //    $data = [
-    //     'name' => $request->name,
-    //     'friend_name' => $request->friend_name,
-    //     ];
+    
 
-  
-
-    $data = Mail::to($request->friend_email)->send(new SendMail($request->name, $request->friend_name));
-        //dd($data);
-    // Session::flash('message', 'Data stored and sent the email');
-    return redirect()->route('sendemail.index');
-        
+        $data = Mail::to($request->friend_email)->send(new SendMail($request->name, $request->friend_name));
+            //dd($data);
+        Session::flash('message', 'Data stored and sent the email');
+        return redirect()->route('sendemail.index');
+            
         
        
     }

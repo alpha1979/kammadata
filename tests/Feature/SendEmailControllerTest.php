@@ -29,7 +29,8 @@ class SendEmailControllerTest extends TestCase
         ->assertViewIs('sendemail.index');
     }
 
-    public function test_sendEmailParameter(){
-        $this->markTestIncomplete();
+    public function testsendEmailErrorIfEmailHasAtSign(){
+       $response = $this->post('/sendmail',['name'=>"ati",'friend_name'=>so,'friend_email'=>'abc@']);
+       $response->assertStatus(200);
     }
 }

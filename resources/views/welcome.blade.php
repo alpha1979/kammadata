@@ -40,7 +40,7 @@
                                     Corporis, eos ab a explicabo officiis perferendis! Obcaecati vel quisquam dolorem, velit, dignissimos porro blanditiis quo error, nisi harum a. Ipsum non, eius quaerat enim quibusdam labore nisi! Architecto, illum.
                                     </p>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam vero voluptate quibusdam tempore non perferendis sequi perspiciatis, ipsam laborum quos deleniti sunt quaerat tenetur eveniet aliquam fugiat delectus aspernatur?
-                                Corporis, eos ab a explicabo officiis perferendis! Obcaecati vel quisquam dolorem, velit, dignissimos porro blanditiis quo error, nisi harum a. Ipsum non, eius quaerat enim quibusdam labore nisi! <a href="{{route('sendemail.index')}}">click here</a>.
+                                Corporis, eos ab a explicabo officiis perferendis! Obcaecati vel quisquam dolorem, velit, dignissimos porro blanditiis quo error, nisi harum a. Ipsum non, eius quaerat enim quibusdam labore nisi! <a  href="{{route('sendemail.index')}}" class="text-danger">click here</a>.
                                 </p>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam vero voluptate quibusdam tempore non perferendis sequi perspiciatis, ipsam laborum quos deleniti sunt quaerat tenetur eveniet aliquam fugiat delectus aspernatur?
                                     Corporis, eos ab a explicabo officiis perferendis! Obcaecati vel quisquam dolorem, velit, dignissimos porro blanditiis quo error, nisi harum a. Ipsum non, eius quaerat enim quibusdam labore nisi! Architecto, illum.
@@ -55,7 +55,7 @@
                         <div class="row mt-5">
                             <div class="col d-flex justify-content-end">
                                     READ MORE ABOUT HOW WE CAN WORK 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-arrow-right-short text-danger" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                     </svg>
                             </div>
