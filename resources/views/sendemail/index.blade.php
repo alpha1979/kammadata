@@ -6,7 +6,7 @@
             
              
                 <h3>Send to a friend</h2>
-                <p>Share this great deal with friends!</p>
+                <p class="text-muted">Share this great deal with friends!</p>
                 <div class="row">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-10">

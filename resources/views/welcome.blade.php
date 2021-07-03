@@ -68,14 +68,14 @@
                     <div class="col  d-flex justify-content-center">
                       
                             
-                            <div class="d-flex bd-highlight mb-3">
-                                <div class="p-2 bd-highlight">&copy;Kamma {{date('Y')}}</div>
+                            <div class="d-flex  mb-3">
+                                <div class="p-2 ">&copy;Kamma {{date('Y')}}</div>
                                 <div class="v-divider"></div>
-                                <div class="p-2 bd-highlight"><a href="https://www.kammadata.com/support/privacy/">Privacy Policy</a></div>
+                                <div class="p-2 "><a href="https://www.kammadata.com/support/privacy/" class="text-secondary">Privacy Policy</a></div>
                                 <div class="v-divider"></div>
-                                <div class="p-2 bd-highlight"><a href="https://www.kammadata.com/">Terms and Conditions</a></div>
+                                <div class="p-2 "><a href="https://www.kammadata.com/" class="text-secondary">Terms and Conditions</a></div>
                                 <div class="v-divider"></div>
-                                <div class="p-2 bd-highlight"><a href="https://www.kammadata.com/support/contact/">Contact</a></div>
+                                <div class="p-2 "><a href="https://www.kammadata.com/support/contact/" class="text-secondary">Contact</a></div>
                               </div>
                     </div>
         
