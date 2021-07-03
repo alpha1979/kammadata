@@ -12,6 +12,12 @@
                     <div class="col-sm-10">
                         <form method="POST" action="" >
                             @csrf
+                            @if($errors->any())
+                            {!! implode('', $errors->all('<div class="alert alert-danger">:message</div>')) !!}
+                            @endif
+                            @if(Session::has('message'))
+                            <p >{{ Session::get('message') }}</p>
+                            @endif
                             <div class="form-group row">
                                 
                                 <label for="name" class="col-sm-2 col-form-label">Your name*</label>
