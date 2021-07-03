@@ -14,7 +14,7 @@ class SendEmailController extends Controller
     //
 
     public function index(){
-        return view('sendmail.index');
+        return view('sendemail.index');
     }
 
     public function store(Request $request){
@@ -35,10 +35,9 @@ class SendEmailController extends Controller
     $data = Mail::to($request->friend_email)->send(new SendMail($request->name, $request->friend_name));
         //dd($data);
     // Session::flash('message', 'Data stored and sent the email');
-    return redirect()->route('send-email.index');
+    return redirect()->route('sendemail.index');
         
         
-        
-        return "this is email store page";
+       
     }
 }

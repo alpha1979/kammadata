@@ -9,11 +9,11 @@ use Tests\TestCase;
 class SendEmailControllerTest extends TestCase
 {
     /**
-     * A basic feature test example.
+     * A basic feature test example for welcome page.
      *
      * @return void
      */
-    public function test_example()
+    public function testWelcomePage()
     {
         $response = $this->get('/');
 
@@ -21,7 +21,15 @@ class SendEmailControllerTest extends TestCase
         ->assertViewIs('welcome');
     }
 
+    public function testSendMailPage()
+    {
+        $response = $this->get('/sendemail');
+
+        $response->assertStatus(200)
+        ->assertViewIs('sendemail.index');
+    }
+
     public function test_sendEmailParameter(){
-        //
+        $this->markTestIncomplete();
     }
 }

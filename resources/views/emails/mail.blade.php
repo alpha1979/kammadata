@@ -1,6 +1,6 @@
 @extends('layouts.template')
 @section('content')
-<div class="container ">
+<div class="container">
     
     <div class="container border border-dark rounded ui-middle shadow">
         <h1>Hi, {{ $friend_name }}</h1>

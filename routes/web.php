@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[MainController::class,'index']
 )->name('home');
 
-Route::get('send-email',[SendEmailController::class,'index'])
-->name('send-email.index');
-Route::post('send-email',[SendEmailController::class,'store'])
-->name('send-email.store');
+Route::get('sendemail',[SendEmailController::class,'index'])
+->name('sendemail.index');
+Route::post('sendemail',[SendEmailController::class,'store'])
+->name('sendemail.store');

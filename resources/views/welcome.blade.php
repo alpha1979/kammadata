@@ -40,7 +40,7 @@
                                     Corporis, eos ab a explicabo officiis perferendis! Obcaecati vel quisquam dolorem, velit, dignissimos porro blanditiis quo error, nisi harum a. Ipsum non, eius quaerat enim quibusdam labore nisi! Architecto, illum.
                                     </p>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam vero voluptate quibusdam tempore non perferendis sequi perspiciatis, ipsam laborum quos deleniti sunt quaerat tenetur eveniet aliquam fugiat delectus aspernatur?
-                                Corporis, eos ab a explicabo officiis perferendis! Obcaecati vel quisquam dolorem, velit, dignissimos porro blanditiis quo error, nisi harum a. Ipsum non, eius quaerat enim quibusdam labore nisi! <a href="{{route('send-email.index')}}">click here</a>.
+                                Corporis, eos ab a explicabo officiis perferendis! Obcaecati vel quisquam dolorem, velit, dignissimos porro blanditiis quo error, nisi harum a. Ipsum non, eius quaerat enim quibusdam labore nisi! <a href="{{route('sendemail.index')}}">click here</a>.
                                 </p>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam vero voluptate quibusdam tempore non perferendis sequi perspiciatis, ipsam laborum quos deleniti sunt quaerat tenetur eveniet aliquam fugiat delectus aspernatur?
                                     Corporis, eos ab a explicabo officiis perferendis! Obcaecati vel quisquam dolorem, velit, dignissimos porro blanditiis quo error, nisi harum a. Ipsum non, eius quaerat enim quibusdam labore nisi! Architecto, illum.
@@ -75,7 +75,7 @@
                                 <div class="v-divider"></div>
                                 <div class="p-2 bd-highlight"><a href="https://www.kammadata.com/">Terms and Conditions</a></div>
                                 <div class="v-divider"></div>
-                                <div class="p-2 bd-highlight"><a href="https://laravel-news.com">Contact</a></div>
+                                <div class="p-2 bd-highlight"><a href="https://www.kammadata.com/support/contact/">Contact</a></div>
                               </div>
                     </div>
         
