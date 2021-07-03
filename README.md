@@ -15,6 +15,7 @@ We have following file structure:
  
 Phpunit test :-
 - asserthasview test done for welcome and sendemail page
+- need testing for form validation 
 
 _Note: 
 1) Install the laravel using your prefered method
