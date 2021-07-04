@@ -1,6 +1,7 @@
-## About Test Project KAMMADATA with application refferal V1.0
+## About Test Project KAMMADATA with application refferal V1.1
 ## Overview
-This project is based on the laravel 8.0 and mysql database. We use the laravel ORM feature. This application save the Name, Friend's Name and Friend's Email address to database and it also send the email to given email address.
+This project is based on the laravel 8.0 and mysql database on laravel sail/docker development environment. 
+We use the laravel ORM feature. This application save the Name, Friend's Name and Friend's Email address to database and it also send the email to given email address.
 The front end is built on laravels blade.
 Majority of the UI has been done using bootstrap css and some custom css style has also been used.
 
@@ -12,7 +13,9 @@ We have following file structure:
  - Controller: MainController and SendEmailController.php
  - Mail: SendEmail.php // different namespace even though same file name
  - Model: SendEmail.php // different namespace even though same file name
- 
+
+Docker - information about the docker 
+    - docker-compose.yml
 Phpunit test :-
 - asserthasview test done for welcome and sendemail page
 - need testing for form validation 
@@ -28,12 +31,12 @@ _Note:
 6) cli command to generate key
     - php artisan key:generate
 7) set up database and update the .env file with database info if not already there
-    -   DB_CONNECTION=mysql
-        DB_HOST=127.0.0.1
+    - DB_CONNECTION=mysql
+        DB_HOST=mysql
         DB_PORT=3306
         DB_DATABASE=kammadata
-        DB_USERNAME=root
-        DB_PASSWORD=
+        DB_USERNAME=sail
+        DB_PASSWORD=password
 8) Here we have used the [mailtrap](https://mailtrap.io/) to test email. You have to update the .env file with mailtrap configuration from your setting 
     -   MAIL_MAILER=smtp
         MAIL_HOST=smtp.mailtrap.io
@@ -50,13 +53,13 @@ _Note:
 11) Ready to go :- php artisan serve
 12) navigation:-
     - Views: 
-    - Welcome page http://localhost:8000/
-    - Send email page http://localhost:8000/sendemail
+    - Welcome page http://localhost/
+    - Send email page http://localhost/sendemail
     - Friends custom email page with the sender name will be sent to friend's email
 
 
 
-V 1.1 will be coming soon with few updates 
+V 1.2 will be coming soon with few updates 
     - login/sign up for the registered user
     - refferal will be added to the user account
     - receving confirmation to guest account
