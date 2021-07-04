@@ -4,6 +4,8 @@ This project is based on the laravel 8.0 and mysql database on laravel sail/dock
 We use the laravel ORM feature. This application save the Name, Friend's Name and Friend's Email address to database and it also send the email to given email address.
 The front end is built on laravels blade.
 Majority of the UI has been done using bootstrap css and some custom css style has also been used.
+This project is in docker-project branch in github repo
+
 
 
 To store in the database we used the laravel default [Migration](https://laravel.com/docs/8.x/migrations). 
@@ -22,8 +24,9 @@ Phpunit test :-
 
 _Note: 
 1) Install the laravel using your prefered method
-2) Clone the project from github repo
-    - https://github.com/alpha1979/kammadata.git
+2) Clone the project from github repo from branch "docker-project"
+    -  git clone -b docker-project https://github.com/alpha1979/kammadata.git
+
 3) Open it in your choice of ide 
 4) use cli to install composer dependency 
     - composer install
