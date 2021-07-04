@@ -15,8 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* 
+    The route for home page
+*/
+
 Route::get('/',[MainController::class,'index']
 )->name('home');
+
+//The route for sendmail page
 
 Route::get('sendemail',[SendEmailController::class,'index'])
 ->name('sendemail.index');

@@ -11,14 +11,15 @@ use Illuminate\Support\Facades\Session;
 
 class SendEmailController extends Controller
 {
-    //
+    //Display the view to sendmail index page 
 
     public function index(){
         return view('sendemail.index');
     }
 
+    //Store the new data in storage 
     public function store(Request $request){
-        
+        //validation for the input field
         $request->validate([
             'name' => 'required|min:4',
             'friend_name' =>'required|min:4',

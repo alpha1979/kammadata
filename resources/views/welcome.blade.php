@@ -1,7 +1,7 @@
 @extends('layouts.template')
 @section('content')
     
-
+{{--Welcome page starts here--}}
         
             <nav class="navbar navbar-expand-lg navbar-light bg-light py-4"></nav>
             <div class="container ">
