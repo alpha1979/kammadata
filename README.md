@@ -29,21 +29,12 @@ _Note:
 6) cli command to generate key
     - php artisan key:generate
 7) set up database and update the .env file with database info if not already there
-<<<<<<< HEAD
-    - DB_CONNECTION=mysql
-        DB_HOST=mysql
-        DB_PORT=3306
-        DB_DATABASE=kammadata
-        DB_USERNAME=sail
-        DB_PASSWORD=password
-=======
     -   DB_CONNECTION=mysql
         DB_HOST=127.0.0.1
         DB_PORT=3306
         DB_DATABASE=kammadata
         DB_USERNAME=root
         DB_PASSWORD=
->>>>>>> 2b7497478ba0b75fe4a3faba0ffb4f2c62ea26bf
 8) Here we have used the [mailtrap](https://mailtrap.io/) to test email. You have to update the .env file with mailtrap configuration from your setting 
     -   MAIL_MAILER=smtp
         MAIL_HOST=smtp.mailtrap.io
