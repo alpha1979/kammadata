@@ -18,19 +18,24 @@ Phpunit test :-
 - need testing for form validation 
 
 _Note: 
+_Note: 
 1) Install the laravel using your prefered method
 2) Clone the project from github repo
     - https://github.com/alpha1979/kammadata.git
 3) Open it in your choice of ide 
-3) copy the .env.example file to .env
-3) set up database and update the .env file with database info
-    -   DB_CONNECTION=mysql
-        DB_HOST=127.0.0.1
+4) use cli to install composer dependency 
+    - composer install
+5) copy the .env.example file to .env
+6) cli command to generate key
+    - php artisan key:generate
+7) set up database and update the .env file with database info if not already there
+    - DB_CONNECTION=mysql
+        DB_HOST=mysql
         DB_PORT=3306
         DB_DATABASE=kammadata
-        DB_USERNAME=root
-        DB_PASSWORD=
-4) Here we have used the [mailtrap](https://mailtrap.io/) to test email. You have to update the .env file with mailtrap configuration from your setting
+        DB_USERNAME=sail
+        DB_PASSWORD=password
+8) Here we have used the [mailtrap](https://mailtrap.io/) to test email. You have to update the .env file with mailtrap configuration from your setting 
     -   MAIL_MAILER=smtp
         MAIL_HOST=smtp.mailtrap.io
         MAIL_PORT=2525
@@ -39,13 +44,15 @@ _Note:
         MAIL_ENCRYPTION=tls
         MAIL_FROM_NAME="${APP_NAME}"
 
-5) you need to migrate the db
+9) you need to migrate the db
     - php artisan migrate
-
-7) navigation:-
+10) you need to seed the database
+    - php artisan db:seed
+11) Ready to go :- php artisan serve
+12) navigation:-
     - Views: 
-    - Welcome page http://localhost:8000/
-    - Send email page http://localhost:8000/sendemail
+    - Welcome page http://localhost/
+    - Send email page http://localhost/sendemail
     - Friends custom email page with the sender name will be sent to friend's email
 
 
