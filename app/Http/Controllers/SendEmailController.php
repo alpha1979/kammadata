@@ -11,12 +11,13 @@ use Illuminate\Support\Facades\Session;
 
 class SendEmailController extends Controller
 {
-    //
+    //Display the welcome page 
 
     public function index(){
         return view('sendemail.index');
     }
 
+    //Store the new data in storage 
     public function store(Request $request){
         
         $request->validate([

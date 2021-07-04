@@ -3,19 +3,21 @@
 <div class="container ">
     
         <div class="container border border-dark rounded ui-middle shadow">
-            
+            {{-- page for sending email --}}
              
                 <h3>Send to a friend</h2>
                 <p class="text-muted">Share this great deal with friends!</p>
                 <div class="row">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-10">
-                        <form method="POST" action="" >
+                        {{--Form Start --}}
+                        <form method="POST" action="{{route('sendemail.store')}}" >
                             @csrf
+                            {{--Checking if any error on validation and if true message will appear --}}
                             @if($errors->any())
                             {!! implode('', $errors->all('<div class="alert alert-danger">:message</div>')) !!}
                             @endif
-                            @if(Session::has('message'))
+                            @if(Session::has('message'))  {{-- The success message section --}}
                             <p >{{ Session::get('message') }}</p>
                             @endif
                             <div class="form-group row">

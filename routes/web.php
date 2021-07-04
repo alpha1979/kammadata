@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//The route for welcome page
 Route::get('/',[MainController::class,'index']
 )->name('home');
 
+//The route for sendmail page
 Route::get('sendemail',[SendEmailController::class,'index'])
 ->name('sendemail.index');
 Route::post('sendemail',[SendEmailController::class,'store'])
